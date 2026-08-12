@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 140 80% 98%; /* #f0fdf4 */
+    --foreground: 224 71% 4%; /* #111827 */
+    --card: 0 0% 100%; /* #ffffff */
+    --card-foreground: 224 71% 4%; /* #111827 */
+    --popover: 0 0% 100%; /* #ffffff */
+    --popover-foreground: 224 71% 4%; /* #111827 */
+    --primary: 163 95% 31%; /* #059669 */
+    --primary-foreground: 0 0% 100%; /* #ffffff */
+    --secondary: 166 84% 39%; /* #10b981 */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 13% 91%; /* #e5e7eb */
+    --muted-foreground: 220 9% 45%; /* #6b7280 */
+    --accent: 38 92% 50%; /* #f59e0b */
+    --accent-foreground: 224 71% 4%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 163 95% 31%;
+    --radius: 0.5rem;
+    --chart-1: 163 95% 31%;
+    --chart-2: 166 84% 39%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 210 40% 96.1%;
+    --chart-5: 12 76% 61%;
+    --dark: 222 47% 11%; /* for dark footer */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.05);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 8s ease-in-out infinite;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.translate-z-10 {
+  transform: translateZ(10px);
+}
+
+.translate-z-20 {
+  transform: translateZ(20px);
+}
+
+.translate-z-30 {
+  transform: translateZ(30px);
+}

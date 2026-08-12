@@ -1,0 +1,22 @@
+{
+  "placeholderImages": [
+    {
+      "id": "login-background",
+      "description": "A smiling farmer in a field, representing the heart of agriculture.",
+      "imageUrl": "https://images.unsplash.com/photo-1620200423726-0a00e0435048?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "indian farmer"
+    },
+    {
+      "id": "user-avatar",
+      "description": "Avatar of a farmer.",
+      "imageUrl": "https://picsum.photos/seed/user-avatar/100/100",
+      "imageHint": "farmer avatar"
+    },
+    {
+      "id": "health-map",
+      "description": "Spectral health map of a farm field.",
+      "imageUrl": "https://picsum.photos/seed/health-map/1200/800",
+      "imageHint": "spectral map"
+    }
+  ]
+}
